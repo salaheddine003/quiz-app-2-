@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lien CDN Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- bouton Démarrer le quiz -->
+    <div class="start_btn"><button>Démarrer le quiz</button></div>
+
+    <!-- Boîte d'informations -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Vous n'aurez que <span>15 secondes</span> pour chaque question.</div>
+            <div class="info">2. Une fois que vous avez sélectionné votre réponse, elle ne peut pas être annulée.</div>
+            <div class="info">3. Vous ne pouvez sélectionner aucune option une fois que le temps s'est écoulé.</div>
+            <div class="info">4. Vous ne pouvez pas quitter le quiz pendant que vous jouez.</div>
+            <div class="info">5. Vous obtiendrez des points sur la base de vos bonnes réponses.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit quiz</button>
+            <button class="restart">Continuez</button>
+        </div>
+    </div>
+
+    <!-- Boîte à quiz -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Application de quiz </div>
+            <div class="timer">
+                <div class="time_left_txt">Temps restant</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Ici, j'ai inséré une question de JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Ici, j'ai inséré des options de JavaScript -->
+            </div>
+        </section>
+
+             <!-- pied de page de la boîte de quiz -->
+        <footer>
+            <div class="total_que">
+              <!-- Ici, j'ai inséré le numéro de nombre de questions à partir de JavaScript -->
+            </div>
+            <button class="next_btn">suivant</button>
+        </footer>
+    </div>
+
+    <!-- Zone de résultat -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Vous avez terminé le Quiz!</div>
+        <div class="score_text">
+            <!-- Ici, j'ai inséré le résultat du score à partir de JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Dans ce fichier JavaScript, j'ai inséré uniquement des questions et des options -->
+    <script src="js/questions.js"></script>
+
+    <!-- Dans ce fichier JavaScript, j'ai codé tous les codes de quiz -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
